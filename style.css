@@ -1,0 +1,375 @@
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * reset.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ */
+
+
+/*------------------------------------*\
+  #Global
+\*------------------------------------*/
+
+
+/* color */
+
+:root{
+    --colorOrange : #FE7E17;
+    --colorLogo : #848484;
+    --colorH2 : #444444;
+    --colorH3 : #686868;
+    --colorBtn : #323232;
+    --textBtn : #fff;
+    --colorWhite : #fff;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.column_container{
+    margin: 5rem 1rem;
+}
+
+/*----section nav----*/
+
+nav{
+    margin: 1rem 5rem;
+}
+.nav-logo{
+    margin: 0 5rem;
+}
+.nav-link{
+    text-decoration: none;
+}
+@media screen and (max-width: 1000px) {
+    .nav-link{
+        text-decoration: none;
+        display: none;
+    }
+    .nav-logo{
+        margin: 0 1rem;
+    }
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-sublist_display{
+    display: none;
+}
+
+/*----section hello----*/
+
+.hello-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(images/fond1.jpg);
+    height: 50%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hello-text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    padding-top: 12rem;
+    color: white;
+}
+@media screen and (max-width: 375px) {
+    .hello-text > h1{
+        font-size: 1.5rem;
+    }
+    .nav-link{
+        text-decoration: none;
+        display: none;
+    }
+}
+/*----section about----*/
+
+@media screen and (min-width: 900px) {
+    .box {
+        display: flex;
+    }
+    .box-one, .box-two, .box-tree{
+        flex: 1;
+        flex-direction: column;
+    }
+    .box-four{
+        flex: 2;
+        margin-right: 1rem;
+    }
+    .box-five{
+        flex: 1;
+    }
+    .about-card{
+        padding: 0 0 10px 0;
+    }
+}
+@media screen and (min-width: 1300px) {
+        
+    }
+    .about-card{
+        padding: 0 0 10px 0;
+    }
+}
+.about-card box-four{
+    display: flex;
+    padding-top: 2rem;
+}
+
+.about-card_heading, .about-card_text{
+    padding: 0 0 10px 0;
+}
+
+/*----section blog----*/
+
+.blog-panels{
+    padding: 1rem 0 1rem 0;
+    max-width: 450px
+}
+
+.blog-panels > p{
+    margin: 1rem 0 1rem 0;
+}
+.blog-panels_img{
+    width: 100%;
+}
+
+
+/*------------------------------------*\
+  #Heading
+\*------------------------------------*/
+
+
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h1 > span{
+    font-size: 1rem;
+}
+h2{
+    font-size: 2rem;
+    color: var(--colorH2);
+}
+h3{
+    font-size: 1.5rem;
+    color: var(--colorH2);
+}
+h4{
+    font-size: 1rem;
+}
+
+p{
+    color: var(--colorH2);
+    line-height: 1.5rem;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.small_text-color, .icon-social_color{
+    color: var(--colorOrange);
+}
+
+
+/* divider*/
+
+h2::after{
+    content : "  ";
+    display: block;
+    width : 100px;
+    height: 2px;
+    margin: auto;
+    margin : auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;    
+}
+
+
+
+
+
+/* Background */
+
+#services, .partners, .heading-divider_color::after{
+    background-color: var(--colorOrange);
+}
+.contact{
+    background-image: url(images/desk.jpg);
+}
+#social{
+    background-image: url(images/dock.jpg);
+}
+
+
+/*------------------------------------*\
+  #Button
+\*------------------------------------*/
+
+.contact-button_style{
+    background-color: var(--colorBtn);;
+    border: 0.5rem solid var(--colorBtn);;
+    padding: 0.5rem 0.5rem;
+    color: var(--textBtn);
+    text-transform: uppercase;
+}
+.contact-button_style:hover{
+    background-color: var(--colorOrange);;
+    border: 0.5rem solid var(--colorOrange);;
+    padding: 0.5rem 0.5rem;
+    color: var(--textBtn);
+    text-transform: uppercase;
+}
+
+/*------------------------------------*\
+  #input
+\*------------------------------------*/
+
+input, textarea{
+    background: transparent;
+    border: 0.1rem solid #fff;
+    width: 90%;
+    margin: 0 0 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.contact-list_style{
+    list-style: none;
+    text-align: left;
+    color: var(--colorWhite);
+}
+
+/*------------------------------------*\
+  #Progress bar
+\*------------------------------------*/
+
+
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+progress {
+    width: 100%;
+    height: 0.625rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+}
+.about-progress_text{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.about-progess_color,[value]::-webkit-progress-bar {
+    background-color: #EFEFEF;    
+}
+.about-progess_color,[value]::-webkit-progress-value {
+    background-color: var(--colorOrange);
+}
+
+/*------------------------------------*\
+  #Our team
+\*------------------------------------*/
+
+.team-flex {
+    display: flex;
+}
+
+/*------------------------------------*\
+  #txt
+\*------------------------------------*/
+.hello-text{
+color: #fff !important;
+}
+.txt{
+ padding-top: 3rem;
+ padding-bottom: 3rem; 
+}
+
+/*------------------------------------*\
+  #Our work
+\*------------------------------------*/
+.workmenu{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+}
+}
+.workteam{
+   
+   align-content:flex-end;
+    
+}
+
+    
+/*----somefunfacts----*/
+    
+.somefunfacts{
+    display: flex;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    
+}
+
+
+.counter-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+/*----section services----*/
+.services-flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  
+}
+
+/*----from the blog----*/
+
+
+}
+
+.blog_container{
+    display: flex;
+    
+    
+}
