@@ -160,9 +160,8 @@ header{
 
 
 /*------------------------------------*\
-  #Heading
+  #Font
 \*------------------------------------*/
-
 
 
 h1, h2, h3, h4, h5, h6{
@@ -287,7 +286,17 @@ progress {
     height: 0.625rem;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
-    display: flex;
+    display: flex; 
+}
+.arrow{
+	display: block;
+	width: 0;
+   height: 0;
+   position: absolute;
+left: .7rem;
+   border-right: .8rem solid transparent;
+   border-left: .8rem solid transparent;
+   border-top: 1rem solid var(--black);
 }
 .about-progress_text{
     display: flex;
@@ -307,69 +316,106 @@ progress {
 \*------------------------------------*/
 
 .team-flex {
-    display: flex;
+    display:flex;
+    margin-bottom: 2.5rem;
+}
+.cardteam1, .cardteam2{
+padding-right: 2rem;
+}
+
+.team_reseaux {
+    display:block;
+    color:
+        #868686;
+    text-align: center;
 }
 
 /*------------------------------------*\
   #txt
 \*------------------------------------*/
-.hello-text{
-color: #fff !important;
 }
-.txt{
- padding-top: 3rem;
- padding-bottom: 3rem; 
-}
+.texteflex{
+ margin-top: 4.5rem;
+ margin-bottom: 3.5rem;
+}    
 
 /*------------------------------------*\
   #Our work
 \*------------------------------------*/
 .workmenu{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    text-transform: uppercase;
-}
-}
-.workteam{
-   
-   align-content:flex-end;
+    display: flex
+    display: inline-block;
+	padding: .6rem 1.2rem;
+    text-align: center;
+    font-size :  1.5em;
     
 }
 
+.portfolio{
+  margin: 0 .5rem;
+		display: grid;
+		grid-template: 
+		
     
+}
+
 /*----somefunfacts----*/
     
 .somefunfacts{
-    display: flex;
-    padding-bottom: 1.5rem;
-    padding-top: 1rem;
-    
+    padding: 1.5rem 0;
+	margin-bottom: 2rem;  
 }
 
 
 .counter-flex {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
 }
 /*----section services----*/
 .services-flex{
     display: flex;
     justify-content: space-between;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    border: solid .1rem black;
+    padding: 3.5rem;
+	margin: 2rem auto;
+    color: #444;
+    color: var(--black);
   
 }
 
 /*----from the blog----*/
 
+.blog-panels{
+    display:inline-block;
+     }
 
+.fromblog{
+    display: block;
+    width: 100%; 
+    text-align: center;
 }
 
-.blog_container{
-    display: flex;
-    
-    
+/*----twitter feed----*/
+
+
+/*----testimonials----*/
+
+
+/*----partners----*/
+
+.partners-logo_flex{
+    display:block;
+    text-align: center;
+}
+
+
+/*----work with us----*/
+
+.contact-flex{
+    display:flex;
 }
