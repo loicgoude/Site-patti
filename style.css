@@ -1,29 +1,18 @@
 /**
  * CONTENTS
  *
- * SETTINGS
- * Global...............Globally-available variables and config.
+ * Global
  *
- * TOOLS
- * Mixins...............Useful mixins.
  *
- * GENERIC
- * reset.css........A level playing field.
- * Box-sizing...........Better default `box-sizing`.
  *
- * BASE
- * Headings.............H1–H6 styles.
  *
- * OBJECTS
- * Wrappers.............Wrapping and constraining elements.
  *
- * COMPONENTS
- * Page-head............The main page header.
- * Page-foot............The main page footer.
- * Buttons..............Button elements.
  *
- * TRUMPS
- * Text.................Text helpers.
+ *
+ *
+ *
+ *
+ *
  */
 
 
@@ -288,7 +277,16 @@ progress {
     margin-top: 1rem;
     display: flex; 
 }
-
+.arrow{
+	display: block;
+	width: 0;
+   height: 0;
+   position: absolute;
+left: .7rem;
+   border-right: .8rem solid transparent;
+   border-left: .8rem solid transparent;
+   border-top: 1rem solid var(--black);
+}
 .about-progress_text{
     display: flex;
     text-transform: uppercase;
@@ -370,12 +368,14 @@ padding-right: 2rem;
 /*----section services----*/
 .services-flex{
     display: flex;
-    justify-content: space-between;
-    border: solid .1rem black;
+    width: 100%;
+    text-align: center;
+    align-items: center;
     padding: 3.5rem;
 	margin: 2rem auto;
     color: #444;
     color: var(--black);
+    background-color: var(--colorOrange);
   
 }
 
