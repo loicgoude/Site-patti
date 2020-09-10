@@ -288,16 +288,7 @@ progress {
     margin-top: 1rem;
     display: flex; 
 }
-.arrow{
-	display: block;
-	width: 0;
-   height: 0;
-   position: absolute;
-left: .7rem;
-   border-right: .8rem solid transparent;
-   border-left: .8rem solid transparent;
-   border-top: 1rem solid var(--black);
-}
+
 .about-progress_text{
     display: flex;
     text-transform: uppercase;
